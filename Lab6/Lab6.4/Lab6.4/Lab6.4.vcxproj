@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{748c22a1-311c-4e2b-a70c-c05fcf4d6bb1}</ProjectGuid>
-    <RootNamespace>Lab63</RootNamespace>
+    <ProjectGuid>{5773edd9-e6d1-4405-ae37-647b5e73179c}</ProjectGuid>
+    <RootNamespace>Lab64</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lab6.3.cpp">
+    <ClCompile Include="Lab6.4.cpp">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
     </ClCompile>
   </ItemGroup>
