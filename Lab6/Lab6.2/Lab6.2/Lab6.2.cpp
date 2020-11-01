@@ -16,9 +16,9 @@ int main()
 
     int a = A;
     int b = B;
-    A = b;
-    B = C;
-    C = a;
+    A = C;
+    B = a;
+    C = b;
 
     printf("Новые значения:\nA = %d\nB = %d\nC = %d", A, B, C);
 
