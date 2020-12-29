@@ -15,135 +15,146 @@ int main()
 
 	if ((a > 0) && (a < 32) && (b > 0) && (b < 13)) {
 		if (a == 1) {
-			char d[] = "Первое";
+			printf("Первое");
 		}
 		else if (a == 2) {
-			char d[] = "Второе";
+			printf("Второе");
 		}
 		else if (a == 3) {
-			char d[] = "Третье";
+			printf("Третье");
 		}
 		else if (a == 4) {
-			char d[] = "Четвертое";
+			printf("Четвертое");
 		}
 		else if (a == 5) {
-			char d[] = "Пятое";
+			printf("Пятое");
 		}
 		else if (a == 6) {
-			char d[] = "Шестое";
+			printf("Шестое");
 		}
 		else if (a == 7) {
-			char d[] = "Седьмое";
+			printf("Седьмое");
 		}
 		else if (a == 8) {
-			char d[] = "Восьмое";
+			printf("Восьмое");
 		}
 		else if (a == 9) {
-			char d[] = "Девятое";
+			printf("Девятое");
 		}
 		else if (a == 10) {
-			char d[] = "Десятое";
+			printf("Десятое");
 		}
 		else if (a == 11) {
-			char d[] = "Одиннадцатое";
+			printf("Одиннадцатое");
 		}
 		else if (a == 12) {
-			char d[] = "Двенадцатое";
+			printf("Двенадцатое");
 		}
 		else if (a == 13) {
-			char d[] = "Тринадцатое";
+			printf("Тринадцатое");
 		}
 		else if (a == 14) {
-			char d[] = "Четырнадцатое";
+			printf("Четырнадцатое");
 		}
 		else if (a == 15) {
-			char d[] = "Пятнадцатое";
+			printf("Пятнадцатое");
 		}
 		else if (a == 16) {
-			char d[] = "Шестнадцатое";
+			printf("Шестнадцатое");
 		}
 		else if (a == 17) {
-			char d[] = "Семнадцатое";
+			printf("Семнадцатое");
 		}
 		else if (a == 18) {
-			char d[] = "Восемнадцатое";
+			printf("Восемнадцатое");
 		}
 		else if (a == 19) {
-			char d[] = "Девятнадцатое";
+			printf("Девятнадцатое");
 		}
 		else if (a == 20) {
-			char d[] = "Двадцатое";
+			printf("Двадцатое");
 		}
 		else if (a == 21) {
-			char d[] = "Двадцать первое";
+			printf("Двадцать первое");
 		}
 		else if (a == 22) {
-			char d[] = "Двадцать второе";
+			printf("Двадцать второе");
 		}
 		else if (a == 23) {
-			char d[] = "Двадцать третье";
+			printf("Двадцать третье");
 		}
 		else if (a == 24) {
-			char d[] = "Двадцать четвертое";
+			printf("Двадцать четвертое");
 		}
 		else if (a == 25) {
-			char d[] = "Двадцать пятое";
+			printf("Двадцать пятое");
 		}
 		else if (a == 26) {
-			char d[] = "Двадцать шестое";
+			printf("Двадцать шестое");
 		}
 		else if (a == 27) {
-			char d[] = "Двадцать седьмое";
+			printf("Двадцать седьмое");
 		}
 		else if (a == 28) {
-			char d[] = "Двадцать восьмое";
+			printf("Двадцать восьмое");
 		}
 		else if (a == 29) {
-			char d[] = "Двадцать девятое";
+			printf("Двадцать девятое");
 		}
-		else if (a == 32) {
-			char d[] = "Тридцатое";
+		else if (a == 30) {
+			printf("Тридцатое");
 		}
 		else if (a == 31) {
-			char d[] = "Тридцать первое";
+		printf("Тридцать первое");
 		}
 		if (b == 1) {
 			char m[] = "января";
+			printf_s("%s", m);
 		}
 		else if (b == 2) {
-			char m[] = "февраля";
+			char m[] = " февраля";
+			printf_s("%s", m);
 		}
 		else if (b == 3) {
-			char m[] = "марта";
+			char m[] = " марта";
+			printf_s("%s", m);
 		}
 		else if (b == 4) {
-			char m[] = "апреля";
+			char m[] = " апреля";
+			printf_s("%s", m);
 		}
 		else if (b == 5) {
-			char m[] = "мая";
+			char m[] = " мая";
+			printf_s("%s", m);
 		}
 		else if (b == 6) {
-			char m[] = "июня";
+			char m[] = " июня";
+			printf_s("%s", m);
 		}
 		else if (b == 7) {
-			char m[] = "июля";
+			char m[] = " июля";
+			printf_s("%s", m);
 		}
 		else if (b == 8) {
-			char m[] = "августа";
+			char m[] = " августа";
+			printf_s("%s", m);
 		}
 		else if (b == 9) {
-			char m[] = "сентября";
+			char m[] = " сентября";
+			printf_s("%s", m);
 		}
 		else if (b == 10) {
-			char m[] = "октября";
+			char m[] = " октября";
+			printf_s("%s", m);
 		}
 		else if (b == 11) {
-			char m[] = "ноября";
+			char m[] = " ноября";
+			printf_s("%s", m);
 		}
 		else if (b == 12) {
-			char m[] = "декабря";
+			char m[] = " декабря";
+			printf_s("%s", m);
 		}
-		printf_s("%s %s", d, m);
 	}
 	else
 		printf_s("Трубуется ввести числа в диапазоне 1-31 и 1-12");
