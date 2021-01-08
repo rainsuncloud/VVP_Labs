@@ -9,7 +9,7 @@ int main()
 	printf_s("Сколько учебных заданий?\n");
 	scanf_s("%d", &n);
 
-	if ((a > 9) && (a < 41)) {
+	if ((n > 9) && (n < 41)) {
         if (n / 10 == 1)
             switch (n) {
             case 10:
