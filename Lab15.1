@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+float PowerA3(float a)
+{
+    float b = a * a * a;
+    return b;
+}
+
+int main()
+{
+    float a1, a2, a3, a4, a5;
+
+    printf("a1 = ");
+    scanf("%f", &a1);
+    printf("a2 = ");
+    scanf("%f", &a2);
+    printf("a3 = ");
+    scanf("%f", &a3);
+    printf("a4 = ");
+    scanf("%f", &a4);
+    printf("a5 = ");
+    scanf("%f", &a5);
+
+    printf("%f, %f, %f, %f, %f", PowerA3(a1), PowerA3(a2), PowerA3(a3), PowerA3(a4), PowerA3(a5));
+
+    return 0;
+}
