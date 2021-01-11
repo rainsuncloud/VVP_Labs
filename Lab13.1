@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    float a;
+
+    printf("Сколько стоит кг конфет?\n");
+    scanf("%f", &a);
+
+    printf("Цена за 0.1 кг - %.2f\n0.2 кг - %.2f\n0.3 кг - %.2f\n0.4 кг - %.2f\n0.5 кг - %.2f\n0.6 кг - %.2f", (float) a / 10, (float) a / 5, (float) a * 3 / 10, (float) a * 2 / 5, (float) a * 3 / 5);
+    printf("\n0.7 кг - %.2f\n0.8 кг - %.2f\n0.9 кг - %.2f\n1 кг - %.2f", (float) a * 7 / 10, (float) a * 4 / 5, (float) a * 9 / 10, a);
+
+    return 0;
+}
