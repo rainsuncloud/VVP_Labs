@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    int a, b;
+    int c = 0;
+
+    printf("A = ");
+    scanf("%d", &a);
+    printf("B = ");
+    scanf("%d", &b);
+    
+    if ((a > b) && (a > 0) && (b > 0)) {
+        while (a > b) {
+            a -= b;
+            c++;
+        }
+        printf("Незанятая часть отрезка = %d\n", a);
+        printf("На отрезке А размещается %d отрезков В", c);
+    }
+    else
+    printf("Необходимо ввести целые положительные числа, причем А > B");
+    return 0;
+}
