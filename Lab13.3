@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int p = 0;
+
+    printf("N = ");
+    scanf("%d", &a);
+    
+    for (int i = 1; i <= (2 * a) - 1; i += 2) {
+        p += i;
+        printf("N = %d\n", p);
+    }
+    return 0;
+}
