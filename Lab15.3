@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <locale.h>
+
+float RingS(float r1, float r2)
+{
+    r1 = (3.14 * r1 * r1) - (3.14 * r2 * r2);
+    return r1;
+}
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    float R1, R2, R3, R4, R5, R6;
+
+    printf("R1 = ");
+    scanf("%f", &R1);
+    printf("R2 = ");
+    scanf("%f", &R2);
+    printf("R3 = ");
+    scanf("%f", &R3);
+    printf("R4 = ");
+    scanf("%f", &R4);
+    printf("R5 = ");
+    scanf("%f", &R5);
+    printf("R6 = ");
+    scanf("%f", &R6);
+    
+    if ((R1 > 0) && (R2 > 0) && (R1 > R2) && (R3 > 0) && (R4 > 0) && (R3 > R4) && (R5 > 0) && (R6 > 0) && (R5 > R6)) {
+        
+        printf("S1 = %f\nS2 = %f\nS3 = %f", RingS(R1, R2), RingS(R3, R4), RingS(R5, R6));
+    }
+    else printf("Необходимо ввести числа > 0, причем R1 > R2, R3 > R4, R5 > R6");
+    
+    return 0;
+}
