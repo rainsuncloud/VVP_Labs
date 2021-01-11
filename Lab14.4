@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    float p;
+    float s = 1000;
+    int k = 0;
+
+    printf("Процентная ставка: ");
+    scanf("%f", &p);
+    
+    if ((p > 0) && (p < 25)) {
+        while (s < 1100) {
+            s = s + (s * p / 100);
+            k++;
+        }
+        printf("Итоговый размер вклада = %.2f", s);
+        printf("\nМесяцев прошло - %d", k);
+    }
+    else
+    printf("Необходимо ввести число > 0 и < 25");
+    return 0;
+}
