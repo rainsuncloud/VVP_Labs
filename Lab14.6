@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    int n;
+    int c = 2;
+    int a = 1;
+    int a1 = 1;
+    int a2;
+
+    printf("N = ");
+    scanf("%d", &n);
+
+    if (n > 1) {
+        while (n > a2) {
+            a2 = a + a1;
+            a = a1;
+            a1 = a2;
+            c++;
+        }
+        printf("Число %d идет под номером %d", n, c);
+    }
+    else
+    printf("Необходимо ввести число Фибоначчи > 1");
+    return 0;
+}
