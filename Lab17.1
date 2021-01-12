@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    int n, k, l;
+    int c = 0;
+    int sum = 0;
+
+    printf("N = ");
+    scanf("%d", &n);
+    printf("K = ");
+    scanf("%d", &k);
+    printf("L = ");
+    scanf("%d", &l);
+    
+    int a[n];
+    
+    for (int i = 0; i < n; i++) {
+		a[i] = rand() % n;
+	}
+	for (int i = 0; i < n; i++) {
+		printf("a[%d] = %d\n", i + 1, a[i]);
+	}
+
+    if ((n > 0) && (k > 0) && (l > 0) && (n >=l) && (l >= k)) {
+        for (int i = k - 1; i < l; i++) {
+            sum = sum + a[i];
+            c++;
+        }
+        float a = (float) sum / c;
+        printf("Среднее арифметической элементов массива с %d по %d = %f", k, l, a);
+    }
+    else printf("Необходимо ввести числа больше 0, причем N >= L >= K");
+    
+    return 0;
+}
