@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    int n, I, J;
+
+    printf("N = ");
+    scanf("%d", &n);
+    
+    if (n > 1) {
+        int a[n];
+        for (int i = 0; i < n; i++) {
+            printf("a[%d] = ", i + 1);
+            scanf("%d", &a[i]);
+	    }
+	    
+	    for (int i = 0; i < n - 1; i++) {
+	        for (int j = 1; j < n; j++) {
+	            if ((a[i] == a[j]) && (i != j)) {
+	                printf("%d и %d", i + 1, j + 1);
+	            }
+	        }
+	    }
+    }
+    else printf("Необходимо ввести N больше 1");
+    
+    return 0;
+}
