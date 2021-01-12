@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+
+    int n;
+    int k = 1;
+
+    printf("N = ");
+    scanf("%d", &n);
+    int a[n];
+
+    if (n > 0) {
+        for (int i = 0; i < n; i++) {
+            a[i] = k;
+            printf("a[%d] = %d\n", i, k);
+            k += 2;
+        }
+    }
+    else printf("Необходимо ввести число больше 0");
+    
+    return 0;
+}
